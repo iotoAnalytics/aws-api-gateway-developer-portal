@@ -2,9 +2,9 @@
 title: Getting Started
 ---
 
-## Getting Started
+## Getting Started with Goverlytyics API
 
-### Create an account and subscribe to APIs
+### Create an account and subscribe to our APIs
 
 To use any of our APIs you must create a developer account. A developer account provides an API Key for accessing our APIs, a playground for testing our APIs, and API usage metrics. Create or sign in using the buttons in the top right.
 

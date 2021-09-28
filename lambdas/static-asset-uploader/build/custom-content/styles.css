@@ -3,3 +3,12 @@
 Add your custom styling here. Note that styling in the source is loaded AFTER this sheet, and has higher priority. Make sure your styles here don't collide with source styles.
 
 */
+
+
+.goverlytics-head {
+    color:#3ac3ed;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}

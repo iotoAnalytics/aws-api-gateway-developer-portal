@@ -1,15 +1,15 @@
 ---
-title: Developer Portal
-header: Developer Portal
-tagline: Your gateway to the data.
+title: Goverlytics Developer Portal
+header: Goverlytics Developer Portal
+tagline: Quantifying Politics™
 gettingStartedButton: Get Started
-apiListButton: Our APIs
+apiListButton: Our API
 ---
 
-### EXPLORE AND BUILD
+### REAL-TIME, ADAPTABLE GOVERLYTICS API
         
-Read the Getting Started guide to learn how to hit the ground running to get an application up and running in no time.
+IOTO's Goverlytics platform uses machine learning and next-generation Natural Language Processing algorithms to analyse political performance. The Goverlytics API serves these analytics to content providers in real time, forming a basis for dynamic content generation. Imagine sports-style big data analytics applied to politics. The potential is limitless.
 
-See what APIs we have to offer, including extensive documentation, and generated SDKs.
+Read the Getting Started guide to learn how to hit the ground running. Get an application up and running in no time.
 
 Sign in to manage your subscriptions, see your current usage, get your API Key, and test against our live API.

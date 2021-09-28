@@ -2,7 +2,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 
-Description: My Dev Portal Stack
+Description: Goverlytics Dev Portal Stack
 Metadata:
   cfn-lint:
     config:
@@ -57,31 +57,33 @@ Parameters:
     Type: String
     Description: The S3 bucket in which the Open API documents are stored. Bucket
       names are globally unique, so you must change this.
+    Default: 'goverlytics-dev-portal-artifacts'
 
   DevPortalSiteS3BucketName:
     Type: String
     Description: The S3 bucket in which the web application code is stored. Bucket
       names are globally unique, so you must change this.
+    Default: 'goverlytics-dev-portal-static-assets'
 
   DevPortalCustomersTableName:
     Type: String
     Description: The name of the DynamoDB Customers table.
-    Default: 'DevPortalCustomers'
+    Default: 'GoverlyticsDevPortalCustomers'
 
   DevPortalPreLoginAccountsTableName:
     Type: String
     Description: The name of the DynamoDB PreLoginAccounts table.
-    Default: 'DevPortalPreLoginAccounts'
+    Default: 'GoverlyticsDevPortalPreLoginAccounts'
 
   DevPortalAdminEmail:
     Type: String
     Description: The email address where user submitted feedback notifications get sent.
-    Default: ''
+    Default: 'enquires@ioto.ca'
 
   DevPortalFeedbackTableName:
     Type: String
     Description: The name of the DynamoDB table storing feedback submitted by users.
-    Default: 'DevPortalFeedback'
+    Default: 'GoverlyticsDevPortalFeedback'
 
   StaticAssetRebuildToken:
     Type: String
@@ -111,11 +113,12 @@ Parameters:
   CognitoIdentityPoolName:
     Type: String
     Description: The name for your Cognito Identity Pool.
-    Default: 'DevPortalIdentityPool'
+    Default: 'GoverlyticsDevPortalIdentityPool'
 
   CognitoDomainNameOrPrefix:
     Type: String
     Description: The Domain Name (or Prefix) at which your Cognito Hosted UI is located. This should be regionally unique.
+    Default: 'goverlytics'
 
   # CognitoDomainAcmCertArn:
   #   Type: String
@@ -125,12 +128,12 @@ Parameters:
   CustomDomainName:
     Type: String
     Description: Optionally provide a custom domain name associated with an ACM cert to create a developer portal at that domain name (provide with the format foo.bar.net). Leave blank to create a developer portal without a custom domain name. Standing up a developer portal stack with a custom domain name will take significantly longer than without.
-    Default: ''
+    Default: 'dev.goverlytics.com'
 
   CustomDomainNameAcmCertArn:
     Type: String
     Description: If you provided a domain name associated with an acm cert, then you must also specify here the acm cert's arn. Leave this blank to create a developer portal without a custom domain name.
-    Default: ''
+    Default: 'arn:aws:acm:us-east-1:122577866007:certificate/dd23ecbd-3c75-4db2-b174-c7d0085857ef'
 
   UseRoute53Nameservers:
     Type: String
