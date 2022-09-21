@@ -9,6 +9,10 @@ Add your custom styling here. Note that styling in the source is loaded AFTER th
     color:#3ac3ed;
 }
 
+.opblock-options {
+    display: none;
+}
+
 h3 {
     font-family: 'Raleway', sans-serif;
 }
