@@ -9,7 +9,7 @@ Add your custom styling here. Note that styling in the source is loaded AFTER th
     color:#3ac3ed;
 }
 
-.opblock-options {
+#root .swagger.ui .opblock.opblock-options {
     display: none;
 }
 
